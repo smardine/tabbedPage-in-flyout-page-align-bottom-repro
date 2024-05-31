@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test.WaitView">
+    <ContentPage.Content>
+
+        <VerticalStackLayout Spacing="10" VerticalOptions="Center">
+            <Button Text="This is buggy => flyout root as navigation page" Clicked="Button_OnClickedAsNavigationPage"></Button>
+            <Button Text="flyout root as tabbed page" Clicked="Button_OnClickedAsTabbedPage"></Button>
+        </VerticalStackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>

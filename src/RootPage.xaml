@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FlyoutPage
+    x:Class="test.RootPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    Title="RootPage">
+    <FlyoutPage.Flyout>
+        <ContentPage Title=" ">
+            <Label Text="this is the first item in the menu"></Label>
+            </ContentPage>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
+        <TabbedPage android:TabbedPage.ToolbarPlacement="Bottom">
+            <ContentPage IconImageSource="home" Title="Page1" BackgroundColor="Blue">
+                <Label>Page1</Label>
+            </ContentPage>
+            <ContentPage IconImageSource="account" Title="Page2" BackgroundColor="Blue">
+                <Label>Page2</Label>
+            </ContentPage>
+            <ContentPage IconImageSource="contact" Title="Page3" BackgroundColor="Blue">
+                <Label>Page3</Label>
+            </ContentPage>
+            <ContentPage IconImageSource="contact" Title="Page4" BackgroundColor="Blue">
+                <Label>Page4</Label>
+            </ContentPage>
+            <ContentPage IconImageSource="contact" Title="Page5" BackgroundColor="Blue">
+                <Label>Page5</Label>
+            </ContentPage>
+
+        </TabbedPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
